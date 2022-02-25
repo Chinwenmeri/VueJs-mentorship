@@ -25,10 +25,16 @@ body {
 
 @-moz-keyframes my-animation {
     from {
-        -moz-transform: translateY(-100%)
+        -moz-transform: translateY(-100%);
+        perspective: 185px;
+        perspective-origin: center bottom;
+        overflow: hidden;
     }
     to {
         -moz-transform: translateY(-100%);
+        perspective: 185px;
+        perspective-origin: center bottom;
+        overflow: hidden;
     }
 }
 
@@ -38,6 +44,9 @@ body {
         /* -webkit-transform: translateY(100%); */
         transform: translateY(100%);
         font-stretch: expanded;
+        perspective: 185px;
+        perspective-origin: center bottom;
+        overflow: hidden;
     }
     to {
         /* -moz-transform: translateY(-100%); */

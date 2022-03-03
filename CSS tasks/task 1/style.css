@@ -52,5 +52,8 @@ body {
         /* -moz-transform: translateY(-100%); */
         /* -webkit-transform: translateY(-100%); */
         transform: translateY(-100%);
+        perspective: 185px;
+        perspective-origin: center bottom;
+        overflow: hidden;
     }
 }

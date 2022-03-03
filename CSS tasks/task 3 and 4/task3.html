@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        window.alert("enter a number between -3 and 3 ");
+        var age = window.prompt("Enter your number: ");
+        window.alert(" enter a letter F or M");
+        var sex = window.prompt("Enter your letter: ");
+        // alert("Your name is " + name);
+
+        function generation(x, y) {
+            if (x == -3 && y == "M") {
+                alert("great grandfather");
+            } else if (x == -3 && y == "F") {
+                alert("great grandmother");
+            } else if (x == -2 && y == "M") {
+                alert("grandfather");
+            } else if (x == -2 && y == "F") {
+                alert("grandmother");
+            } else if (x == -1 && y == "F") {
+                alert("mother");
+            } else if (x == -1 && y == "M") {
+                alert("father");
+            } else if (x == 0 && y == "M") {
+                alert("male child");
+            } else if (x == 0 && y == "F") {
+                alert("female child");
+            } else if (x == 1 && y == "M") {
+                alert("son");
+            } else if (x == 1 && y == "F") {
+                alert("daughter");
+            } else if (x == 2 && y == "M") {
+                alert("grandson");
+            } else if (x == 2 && y == "F") {
+                alert("granddaughter");
+            } else if (x == 3 && y == "M") {
+                alert("great grandson");
+            } else if (x == 3 && y == "F") {
+                alert("great granddaughter");
+            }
+        }
+
+        generation(age, sex);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script src="./task 3 and 4/task 4.js"></script>
+
+    <script>
+        var number = window.prompt(" enter any number of your choice");
+
+        function doubleton(n) {
+            s = n + 1;
+            while (new Set(String(s)).size !== 2) {
+                s++;
+            }
+            console.log(s);
+            return s;
+        }
+
+        doubleton(number);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+.scroll-container {
+    /* border: 1px solid white;
+    border-radius: 5px; */
+    /* border overflow: hidden; */
+}
+
+.scroll-text {
+    text-align: center;
+    /* animations properties */
+    /* -moz-transform: translateY(100%); */
+    transform: translateY(100%);
+    /* -moz-animation: my-animation 5s linear infinite; */
+    animation: my-animation 5s linear infinite;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-stretch: ultra-expanded;
+}
+
+
+/* for mozilla*/
+
+@-moz-keyframes my-animation {
+    from {
+        -moz-transform: translateY(-100%);
+        perspective: 185px;
+        perspective-origin: center bottom;
+        overflow: hidden;
+    }
+    to {
+        -moz-transform: translateY(-100%);
+        perspective: 185px;
+        perspective-origin: center bottom;
+        overflow: hidden;
+    }
+}
+
+@keyframes my-animation {
+    from {
+        /* -moz-transform: translateY(100%); */
+        /* -webkit-transform: translateY(100%); */
+        transform: translateY(100%);
+        font-stretch: expanded;
+        perspective: 185px;
+        perspective-origin: center bottom;
+        overflow: hidden;
+    }
+    to {
+        /* -moz-transform: translateY(-100%); */
+        /* -webkit-transform: translateY(-100%); */
+        transform: translateY(-100%);
+        perspective: 185px;
+        perspective-origin: center bottom;
+        overflow: hidden;
+    }
+}
